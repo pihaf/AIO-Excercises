@@ -25,6 +25,3 @@ def evaluate_classification_model(tp, fp, fn):
     print("Recall is", recall)
     print("F1-score is", f1_score)
     return
-
-if __name__ == "__main__":
-    evaluate_classification_model(2, 3, 4)
