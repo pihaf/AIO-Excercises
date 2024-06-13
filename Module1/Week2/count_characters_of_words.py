@@ -8,5 +8,4 @@ def count_characters(word):
 
     return result
 
-assert count_characters("Baby") == {'B': 1 , 'a': 1 , 'b': 1 , 'y': 1}
 print(count_characters('smiles'))

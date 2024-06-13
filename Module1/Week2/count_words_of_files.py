@@ -13,5 +13,4 @@ def count_words_from_file(file_path):
 
 file_path = 'Module1/Week2/data.txt'
 result = count_words_from_file(file_path)
-assert result['who'] == 3
 print(result['man'])

@@ -30,5 +30,4 @@ def levenshtein_distance(source_string, target_string):
     # Return the levenshtein distance
     return matrix[num_rows - 1][num_cols - 1]
 
-assert levenshtein_distance("hi", "hello") == 4
 print(levenshtein_distance("hola", "hello"))

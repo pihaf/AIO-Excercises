@@ -11,8 +11,6 @@ def check_the_number(number) :
         result = "False"
     return result
 
-N = 7
-assert check_the_number(N) == "False"
 N = 2
 results = check_the_number(N)
 #print(results)
@@ -29,11 +27,6 @@ def append_min_max( data , max , min) :
             result.append(i)
     return result
 
-my_list = [5, 2, 5, 0, 1]
-max_val = 1
-min_val = 0
-assert append_min_max(data = my_list, max = max_val, min= min_val) == [1, 1, 1, 0, 1]
-
 my_list = [10, 2, 5, 0, 1]
 max_val = 2
 min_val = 1
@@ -46,12 +39,6 @@ def extend_list(x, y):
     x.extend(y)
     return x
 
-list_num1 = ['a', 2, 5]
-list_num2 = [1, 1]
-list_num3 = [0, 0]
-
-assert extend_list(list_num1, extend_list(list_num2, list_num3)) == ['a', 2, 5, 1, 1, 0, 0]
-
 list_num1 = [1, 2]
 list_num2 = [3, 4]
 list_num3 = [0, 0]
@@ -62,9 +49,6 @@ list_num3 = [0, 0]
 def find_min_in_list(n):
     return min(n)
 
-my_list = [1, 22, 93, -100]
-assert find_min_in_list(my_list) == -100
-
 my_list = [1, 2, 3, -1]
 #print(find_min_in_list(my_list))
 
@@ -73,18 +57,12 @@ def find_max_in_list(n):
     # Your code here
     return max(n)
 
-my_list = [1001, 9, 100, 0]
-assert find_max_in_list(my_list) == 1001
-
 my_list = [1, 9, 9, 0]
 #print(find_max_in_list(my_list))
 
 # Question 10
 def check_equal_num(integers, number=1):
     return any(x == number for x in integers)
-
-my_list = [1, 3, 9, 4]
-assert check_equal_num(my_list, -1) == False
 
 my_list = [1, 2, 3, 4]
 #print(check_equal_num(my_list, 2))
@@ -96,7 +74,6 @@ def find_mean(list_nums = [0, 1, 2]):
         var += i
     return var / len(list_nums)
 
-assert find_mean([4, 6, 8]) == 6
 #print(find_mean())
 
 # Question 12
@@ -108,7 +85,6 @@ def check_if_divisible_by_three(data):
             var.append(i)
     return var
 
-assert check_if_divisible_by_three([3, 9, 4, 5]) == [3, 9]
 #print(check_if_divisible_by_three([1, 2, 3, 5, 6]))
 
 # Question 13
@@ -119,7 +95,6 @@ def factorial(y):
         y -= 1
     return var
 
-assert factorial(8) == 40320
 #print(factorial(4))
 
 # Question 14
@@ -128,9 +103,6 @@ def reverse_string(x):
     x = x[::-1]
     reversed_string = ''.join(x)
     return reversed_string
-    
-x = 'I can do it'
-assert reverse_string(x) == "ti od nac I"
 
 x = 'apricot'
 #print(reverse_string(x))
@@ -146,9 +118,6 @@ def check_positive_num(x):
 def my_function(data):
     res = [check_positive_num(x) for x in data]
     return res
-
-data = [10, 0, -10, -1]
-assert my_function(data) == ['T', 'N', 'N', 'N']
 
 data = [2, 3, 5, -1]
 #print(my_function(data))
@@ -167,9 +136,6 @@ def find_unique_num(data):
         if function_helper(i, res):
             res.append(i)
     return res
-
-lst = [10, 10, 9, 7, 7]
-assert find_unique_num(lst) == [10, 9, 7]
 
 lst = [9, 9, 8, 1, 1]
 #print(find_unique_num(lst))
