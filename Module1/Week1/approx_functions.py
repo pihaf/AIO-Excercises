@@ -1,3 +1,5 @@
+positive_int_check = "n must be a positive integer"
+
 # Function to calculate factorial
 def factorial(n):
     if n == 0:
@@ -6,7 +8,7 @@ def factorial(n):
 
 def approx_sin(x, n):
     if n <= 0:
-        print("n must be a positive integer")
+        print(positive_int_check)
         return None
     
     result = 0
@@ -17,7 +19,7 @@ def approx_sin(x, n):
 
 def approx_cos(x, n):
     if n <= 0:
-        print("n must be a positive integer")
+        print(positive_int_check)
         return None
     
     result = 0
@@ -28,7 +30,7 @@ def approx_cos(x, n):
 
 def approx_sinh(x, n):
     if n <= 0:
-        print("n must be a positive integer")
+        print(positive_int_check)
         return None
     
     result = 0
@@ -39,7 +41,7 @@ def approx_sinh(x, n):
 
 def approx_cosh(x, n):
     if n <= 0:
-        print("n must be a positive integer")
+        print(positive_int_check)
         return None
     
     result = 0

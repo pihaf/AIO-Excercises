@@ -24,4 +24,3 @@ def evaluate_classification_model(tp, fp, fn):
     print("Precision is", precision)
     print("Recall is", recall)
     print("F1-score is", f1_score)
-    return
