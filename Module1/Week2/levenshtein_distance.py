@@ -20,13 +20,6 @@ def levenshtein_distance(source_string, target_string):
             sub_cost = matrix[r - 1][c - 1] + cost
             matrix[r][c] = min(ins_cost, del_cost, sub_cost)
 
-    # Print result matrix
-    for r in range(num_rows):
-        for c in range(num_cols):
-            print(matrix[r][c], end=' ')
-
-        print()
-
     # Return the levenshtein distance
     return matrix[num_rows - 1][num_cols - 1]
 
