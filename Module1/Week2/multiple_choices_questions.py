@@ -30,7 +30,7 @@ def append_min_max( data , max , min) :
 my_list = [10, 2, 5, 0, 1]
 max_val = 2
 min_val = 1
-# print(append_min_max(data = my_list, max_val = max_val, min_val = min_val))
+#print(append_min_max(data = my_list, max = max_val, min = min_val))
 
 # Question 7
 def extend_list(x, y):

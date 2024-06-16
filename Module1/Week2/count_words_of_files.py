@@ -11,6 +11,6 @@ def count_words_from_file(file_path):
 
     return result
 
-file_path = 'data.txt'
+file_path = 'Module1/Week2/data.txt'
 result = count_words_from_file(file_path)
 print(result['man'])
