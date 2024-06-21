@@ -1,6 +1,9 @@
+import torch
+import torch.nn as nn
 from stack_class import MyStack
 from queue_class import MyQueue
 from ward_person_oop import (Person, Student, Teacher, Doctor, Ward)
+from softmax_class import (MySoftmax, SoftmaxStable)
 
 def test_stack():
     stack1 = MyStack(capacity=5)
@@ -48,3 +51,15 @@ def test_ward_person_oop():
 
     ward1.sort_age()
     assert ward1.compute_average() == 1982
+
+def test_softmax_and_softmaxstable():
+    data = torch.Tensor([1 , 2 , 300000000])
+    my_softmax = MySoftmax()
+    output = my_softmax(data)
+    assert round(output[0].item(), 2) == 0
+
+    data = torch.Tensor([1 , 2 , 3])
+    softmax_stable = SoftmaxStable()
+    output = softmax_stable(data)
+    expected_output = torch.Tensor([0.0900, 0.2447, 0.6652])
+    assert torch.allclose(output, expected_output, atol=1e-4)
