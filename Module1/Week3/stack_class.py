@@ -1,4 +1,4 @@
-class MyStack():
+class MyStack:
     def __init__(self, capacity):
         self.capacity = capacity
         self.stack = []
